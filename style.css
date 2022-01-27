@@ -14,9 +14,6 @@
     --color-menu-hover: #323c4e;
 }
 
-body {
-  height: 300vh;
-}
 
 .wrapper{
   background: var(--color-menu-bg);
