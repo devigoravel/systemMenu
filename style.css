@@ -15,6 +15,7 @@
 }
 
 
+
 .wrapper{
   background: var(--color-menu-bg);
   position: fixed;
@@ -185,7 +186,7 @@ nav .content .links{
   nav .content .links{
     display: block;
     position: fixed;
-    background: #14181f;
+    background: var(--color-menu-bg);
     height: 100%;
     width: 100%;
     top: 70px;
@@ -256,6 +257,17 @@ nav .content .links{
   .wrapper .search-box input{
     padding-right: 30px;
   }
+  .panel-control {
+    width: 90%;
+  }
+  .panel-control form {
+    flex-direction: column;
+  }
+
+  .panel-control form .input-color-text, .input-color-bg, .input-color-hover, .input-text-logo {
+    width: 90%;
+  }
+
 }
 
 .panel-control{
@@ -332,5 +344,26 @@ nav .content .links{
   text-transform: uppercase;
   background: #000;
   color: crimson;
+}
+
+@media screen and (max-width: 400px){
+  .panel-control{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: -1;
+  }
+  .panel-control form {
+    width: 95%;
+    display: block;
+    height: auto;
+  }
+  .panel-control form .input-color-text, .input-color-bg, .input-color-hover, .input-text-logo {
+    margin: 10px 0;
+    width: 95%;
+  }
+
 }
 
